@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+<head>
+  <title>Bulma CSS</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+
+  <style>
+    body {
+      word-break: break-all;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar is-fixed-top has-shadow is-white ">
+    <!-- logo / brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="mela.jpg" alt="L'immagine si sta caricando" class="py-4 px-2" />
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+        <a class="navbar-item">Account</a>
+        <a class="navbar-item">Shopping Card</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <div class="section pt-4 pb-0">
+    <nav class="breadcrumb has-arrow-separator">
+      <ul class="container">
+        <li><a class="has-text-grey">Intro</a></li>
+        <li><a class="has-text-grey">In depth</a></li>
+        <li class="is-active"><a class="">Expert</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Product Columns -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-8 is-variable">
+        <div class="column is-4-tablet">
+          <!-- tabbed content -->
+          <div class="title">Mela Golden Esempio
+            <p class="subtitle">Qualche parola sull'articolo</p>
+          </div>
+        </div>
+        <div class="column is-5-tablet">
+          <img src="mela.jpg" alt="L'immagine si sta caricando...">
+        </div>
+        <div class="column is-3-tablet">
+          <div>Prezzo Articolo: 100€</div>
+          <form>
+            <div class="field">
+              <div class="control mb-6">
+                <div class="select is-dark">
+                  <select>
+                    <option>Small (200g)</option>
+                    <option>Medium (500g)</option>
+                    <option>Large (1000g)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button class="button is-primary">Add to cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Product Columns -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-8 is-variable">
+      <div class="column is-7-tablet">
+        <!-- tabbed content -->
+        <div class="tabs is-boxed">
+          <ul>
+            <li class="is-active" data-target="product-details">
+              <a>Product Details</a>
+            </li>
+            <li data-target="delivery-information">
+              <a>Delivery Information</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-2" id="tab-content">
+          <div id="product-details">
+            <h3 class="is-size-5 title">Product Details</h3>
+            <p>
+              Dettagli sul relativo articolo.
+            </p>
+          </div>
+          <div id="delivery-information" class="is-hidden">
+            <h3 class="is-size-5 title">Delivery Information</h3>
+            <p>
+              Informazioni sulla spedizione ed eventuali costi aggiuntivi.
+            </p>
+          </div>
+        </div>
+    
+      </div>
+      <div class="column is-5-tablet">    
+        <div class="message">
+          <div class="message-header">
+            <p>Earn Points</p>
+          </div>
+          <div class="message-body">
+            <p>This is the way</p>
+            <div class="has-text-centered">
+              <button class="button mt-5" id="signup">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section is-hidden-mobile">
+  <div class="container">
+    <h3 class="title has-text-centered is-size-4">Related Products</h3>
+    <div class="columns mt-5 is-8 is-variable is-centered">
+      <div class="column is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image has-text-centered px-6">
+            <img src="" alt="" />
+          </div>
+          <div class="card-content">
+            <p>12.34€</p>
+            <p class="title is-size-5">Corwvnwpn</p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <a href="#" class="has-text-grey">View</a>
+            </p>
+            <p class="card-footer-item">
+              <a href="#" class="has-text-grey">dismiss</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+      <div class="column is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image has-text-centered px-6">
+            <img src="" alt="" />
+          </div>
+          <div class="card-content">
+            <p>12.64</p>
+            <p class="title is-size-5">Other</p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <a href="#" class="has-text-grey">View</a>
+            </p>
+            <p class="card-footer-item">
+              <a href="#" class="has-text-grey">dismiss</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+      <div class="column is-4-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image has-text-centered px-6">
+            <img src="" alt="" />
+          </div>
+          <div class="card-content">
+            <p>12.44</p>
+            <p class="title is-size-5">cwecewcw</p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <a href="#" class="has-text-grey">View</a>
+            </p>
+            <p class="card-footer-item">
+              <a href="#" class="has-text-grey">dismiss</a>
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+</section>
+
+<!--Modal -->
+<div class="modal">
+  <div class="modal-background"></div>
+    <div class="modal-content has-background-white py-5 px-5 has-text-centered" style="height: 60%;">
+      <h3 class="title mb-6">Join Us</h3>
+      <form class="">
+        <div class="field">
+          <label for="name" class="label">Name</label>
+          <div class="control">
+            <input type="text" class="input" placeholder="Name">
+          </div>
+        </div>
+        <div class="field mb-4">
+          <label for="email" class="label">Email</label>
+          <div class="control">
+            <input type="text" class="input" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="" class="checkbox">
+              <input type="checkbox"/>
+              I agree to the <a href="">terms & conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="mt-6 has-text-centered">
+          <button class="button is-warning">Sing Up</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <!-- Content ... -->
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Save changes</button>
+      <button class="button">Cancel</button>
+    </footer>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>Copyright 2020</p>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

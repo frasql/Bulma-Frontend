@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="has-navbar-fixed-top">
+<head>
+  <title>Homepage</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <link rel="stylesheet" href="index.css" />
+
+  <style>
+    body {
+      height: 100%;
+      word-break: break-all;
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar is-fixed-top has-shadow is-white" style="border-bottom: 1px solid lightgrey;">
+        <!-- logo / brand -->
+        <div class="navbar-brand">
+          <img class="ml-5" src="" />
+          <a class="navbar-item">
+          </a>
+          <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-start">
+              <a class="navbar-item">Homepage</a>
+              <a class="navbar-item" id="about">About Us</a>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-primary" id="signup">
+                    <strong>Sign up</strong>
+                  </a>
+                  <a class="button is-link" id="signin">
+                    Log in
+                  </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="section is-hidden-mobile">
+        <div class="container">
+          <h3 class="title has-text-centered is-size-4 has-text-white">Categories</h3>
+          <div class="section" style="height: 280px;">
+
+          </div>
+          <div class="columns mt-5 is-8 is-variable is-centered">
+            <div class="column is-4-tablet is-3-desktop">
+              <div class="card">
+                <div class="card-image has-text-centered px-6">
+                  <img src="images/fiore.jpg" alt="L'immagine sta caricando" style="border: 1px solid lightgrey;"/>
+                </div>
+                <div class="card-content">
+                  <p class="title has-text-centered">Fiori</p>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <a href="#" class="has-text-grey" id="fiori_go">Go</a>
+                      </p>
+                      <p class="card-footer-item"> 
+                        <a href="#" class="has-text-grey" id="fiori_details">Show Details</a>
+                      </p>
+                </footer>
+              </div>
+            </div>
+            <div class="column is-4-tablet is-3-desktop">
+              <div class="card">
+                <div class="card-image has-text-centered px-6">
+                  <img src="images/frutta.jpg" alt="L'immagine sta caricando" height="80" style="border: 1px solid lightgrey;"/>
+                </div>
+                <div class="card-content">
+                  <p class="title has-text-centered">Frutta</p>
+                </div>
+                <footer class="card-footer">
+                  <p class="card-footer-item">
+                    <a href="#" class="has-text-grey" id="frutta_go">Go</a>
+                  </p>
+                  <p class="card-footer-item"> 
+                    <a href="#" class="has-text-grey" id="frutta_details">Show Details</a>
+                  </p>
+                </footer>
+              </div>
+            </div>
+            <div class="column is-4-tablet is-3-desktop">
+              <div class="card">
+                <div class="card-image has-text-centered px-6">
+                  <img src="images/salato.jpg" alt="L'immagine sta caricando" style="border: 1px solid lightgrey;"/>
+                </div>
+                <div class="card-content">
+                  <p class="title has-text-centered">Salato</p>
+                </div>
+                <footer class="card-footer">
+                  <p class="card-footer-item">
+                    <a href="#" class="has-text-grey" id="salato_go">Go</a>
+                  </p>
+                  <p class="card-footer-item"> 
+                    <a href="#" class="has-text-grey" id="salato_details">Show Details</a>
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      
+    </section>
+
+    <footer class="footer py-5" style="height: 180px;">
+        <div class="content has-text-centered">
+            <p class="subtitle">Link ad altre applicazioni interessanti</p>
+            <p>
+            </p>
+        </div>
+        <p class="content has-text-left">
+        </p>
+    </footer>
+
+    <!-- modal about -->
+    <div class="modal" id="modal-about">
+      <div class="modal-background" id="modal-background-about"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title has-text-centered">About Us</p>
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <div class="card-image has-text-centered px-6">
+              <img src="images/fiore.jpg" alt="L'immagine sta caricando" />
+          </div>
+          <div class="card-content">
+              <p class="images/subtitle">I nostri fiori</p>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button" id="close-about">Close</button>
+        </footer>
+      </div>
+    </div>
+
+
+    <!-- modal fiori_details -->
+    <div class="modal" id="modal_fiori">
+        <div class="modal-background" id="modal-background-fiori"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title has-text-centered">fiori</p>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="card-image has-text-centered px-6">
+                <img src="images/fiore.jpg" alt="L'immagine sta caricando" />
+            </div>
+            <div class="card-content">
+                <p class="subtitle">I nostri fiori</p>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success">View</button>
+            <button class="button" id="close-fiori">Close</button>
+          </footer>
+        </div>
+    </div>
+
+    <!-- modal frutta_details -->
+    <div class="modal" id="modal_frutta">
+        <div class="modal-background" id="modal-background-frutta"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title has-text-centered">frutta</p>
+          </header>
+          <section class="modal-card-body">
+            <!-- Content ... -->
+            <div class="card-image has-text-centered px-6">
+                <img src="images/frutta.jpg" alt="L'immagine sta caricando" />
+            </div>
+            <div class="card-content has-text-left">
+                <p class="subtitle">La nostra frutta:</p>
+                <ol class="list-group" type="1">
+                    <li class="list-group-item"> Qualità.</li>
+                </ol>
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <button class="button is-success">View</button>
+            <button class="button" id="close-frutta">Close</button>
+          </footer>
+        </div>
+    </div>
+
+<!-- Modal Sing Up -->
+<div class="modal" id="modal-signup">
+    <div class="modal-background" id="modal-background-signup"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Sing Up</p>
+        <button class="delete" id="close-signup" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <!-- Content -->
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Username</label>
+            <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+            <!--
+            <div class="control has-icons-left has-icons-right">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-success">This username is available</p>
+            -->
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <!--
+            <div class="control has-icons-left has-icons-right">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This email is invalid</p>
+            -->
+          </div>
+          <!--
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>With options</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          -->
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="question">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="question">
+                No
+              </label>
+            </div>
+        </div>
+      <footer class="modal-card-foot">           
+        <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Cancel</button>
+            </div>
+          </div>
+      </footer>
+    </section>
+    </div>
+</div>
+
+<!-- Modal Sing In -->
+<div class="modal" id="modal-signin">
+    <div class="modal-background" id="modal-background-signin"></div>
+    <div class="modal-card has-background-light">
+        <!-- Content -->
+        <div class="hero is-fullheight has-background-light" style="border: 1px solid lightgrey;">
+            <div class="hero-body">
+              <div class="container has-text-centered">
+                <div class="box">
+                    <div class="box">
+                      <img src="images/login.png" width="80" height="80">
+                    </div>
+                    <div class="title has-text-grey is-5">Please enter your email and password.</div>
+                    <form>
+                      <div class="field">
+                        <div class="control">
+                          <input class="input is-large" type="email" placeholder="Email" autofocus="">
+                        </div>
+                        </div>
+                        <div class="field">
+                          <div class="control">
+                            <input class="input is-large" type="password" placeholder="Password">
+                          </div>
+                        </div>
+                        <label class="checkbox" style="margin: 20px;">
+                          <input type="checkbox">
+                              Remember me
+                        </label>
+                        <button class="button is-block is-info is-large is-fullwidth">Login</button>
+                        <p class="has-text-grey">
+                            <a href="">Sign Up</a> &nbsp;·&nbsp;
+                            <a href="">Forgot Password</a> &nbsp;·&nbsp;
+                            <a href="">Need Help?</a>
+                        </p>
+                    </form>
+                    </div>
+                    <div class="buttons">
+                        <button class="button is-danger has-text-left" id="close-signin">close</button>              
+                    </div>
+            </div>
+          </div>
+    </div>
+
+</div>
+
+
+   
+<script type="text/javascript" src="index.js" async></script>
+
+</body>
+
+</html>
